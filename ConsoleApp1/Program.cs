@@ -67,42 +67,43 @@
 // } while (isNumeric);
 // Console.WriteLine("You entered a non-numeric string.");
 
-Random random = new Random();
-int secretNumber = random.Next(1, 101); // Random number between 1 and 100
-int guess;
-bool isValid;
+// Random random = new Random();
+// int secretNumber = random.Next(1, 101); // Random number between 1 and 100
+// int guess;
+// bool isValid;
 
-Console.WriteLine("Guess the number between 1 and 100!");
+// Console.WriteLine("Guess the number between 1 and 100!");
 
-do
-{
-    Console.Write("Enter your guess: ");
-    string input = Console.ReadLine();
+// do
+// {
+//     Console.Write("Enter your guess: ");
+//     string input = Console.ReadLine();
     
-    // Check if input can be converted to an integer
-    isValid = int.TryParse(input, out guess);
+//     // Check if input can be converted to an integer
+//     isValid = int.TryParse(input, out guess);
     
-    if (isValid)
-    {
-        if (guess < secretNumber)
-        {
-            Console.WriteLine("Too low!");
-        }
-        else if (guess > secretNumber)
-        {
-            Console.WriteLine("Too high!");
-        }
-        else
-        {
-            Console.WriteLine("Correct! You guessed the number.");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Invalid input. Please enter a number.");
-    }
+//     if (isValid)
+//     {
+//         if (guess < secretNumber)
+//         {
+//             Console.WriteLine("Too low!");
+//         }
+//         else if (guess > secretNumber)
+//         {
+//             Console.WriteLine("Too high!");
+//         }
+//         else
+//         {
+//             Console.WriteLine("Correct! You guessed the number.");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("Invalid input. Please enter a number.");
+//     }
     
-} while (!isValid || guess != secretNumber);
+// } while (!isValid || guess != secretNumber);
+
 
 
 
